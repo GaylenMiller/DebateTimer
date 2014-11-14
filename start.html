@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Debate Timer</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
+    <!--
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    -->
+
+
+    <!-- Modernizr checks for browser capabilities and provides exist functions -->
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div id="root">
+
+        <header>
+            <a href="index.html">
+                <span class="left">Debate Timer</span>
+            </a>
+            <span class="right">Timer</span>
+        </header>
+
+        <fieldset id="speech-speaker-fieldset">
+            <legend>Speech &amp; Speaker</legend>
+            <div id="speech-speaker-header">
+                <span id="speech-heading">1AC</span>
+                <span id="speaker-heading">Gaylen Miller</span>
+            </div>
+        </fieldset>
+        <fieldset id="timer-container">
+            <legend>Time Remaining</legend>
+            <div id="timer-display">0:00</div>
+            <canvas id="sand-column">
+            </canvas>
+        </fieldset>
+        <fieldset id="well-done-image">
+            <legend>Well Done!</legend>
+            <img src="img/welldone-692x692.jpg">
+        </fieldset>
+        <div id="start-stop-button" class="start">Start</div>
+        <div class="control-buttons">
+            <div class="iconfont active" id="down-arrow">{</div><div id="up-arrow" class="iconfont active" >}</div>
+            <div id="prev-speech-button" class="prev-speech inactive">Prior</div>
+            <div id="next-speech-button" class="next-speech active">Next Speaker</div>
+        </div>
+        <div id="speech-speaker-table">
+            <table>
+                <tr>
+                    <th>Spkr</th><th>Speech</th><th>Time</th><th>Actual</th>
+                </tr>
+                <tr class="current" id="speech-A">
+                    <td>1A</td><td>1AC     </td><td>0:05</td><td>0:00</td>
+                </tr>
+                <tr class="incomplete" id="speech-B">
+                    <td>2N</td><td>Cross X </td><td>3:00</td><td>0:00</td>
+                </tr>
+                <tr class="incomplete PN" id="speech-C">
+                    <td>PN</td><td>Prep-Neg</td><td>5:00</td><td>0:00</td>
+                </tr>
+                <tr class="incomplete" id="speech-D">
+                    <td>1N</td><td>1NC     </td><td>8:00</td><td>0:00</td>
+                </tr>
+                <tr class="incomplete" id="speech-E">
+                    <td>1A</td><td>Cross X </td><td>3:00</td><td>0:00</td>
+                </tr>
+                <tr class="incomplete PA" id="speech-F">
+                    <td>PA</td><td>Prep-Aff</td><td>5:00</td><td>0:00</td>
+                </tr>
+                <tr class="incomplete" id="speech-G">
+                    <td>2A</td><td>2AC     </td><td>8:00</td><td>0:00</td>
+                </tr>
+                <tr class="incomplete" id="speech-H">
+                    <td>1N</td><td>Cross X </td><td>3:00</td><td>0:00</td>
+                </tr>
+                <tr class="incomplete PN" id="speech-I">
+                    <td>PN</td><td>Prep-Neg</td><td>0:00</td><td>0:00</td>
+                </tr>
+                <tr class="incomplete" id="speech-J">
+                    <td>2N</td><td>2NC     </td><td>8:00</td><td>0:00</td>
+                </tr>
+                <tr class="incomplete" id="speech-K">
+                    <td>2A</td><td>Cross X </td><td>3:00</td><td>0:00</td>
+                </tr>
+                <tr class="incomplete PN" id="speech-L">
+                    <td>PN</td><td>Prep-Neg</td><td>0:00</td><td>0:00</td>
+                </tr>
+                <tr class="incomplete" id="speech-M">
+                    <td>1N</td><td>1NR     </td><td>5:00</td><td>0:00</td>
+                </tr>
+                <tr class="incomplete PA" id="speech-N">
+                    <td>PA</td><td>Prep-Aff</td><td>0:00</td><td>0:00</td>
+                </tr>
+                <tr class="incomplete" id="speech-O">
+                    <td>1A</td><td>1AR     </td><td>5:00</td><td>0:00</td>
+                </tr>
+                <tr class="incomplete PN" id="speech-P">
+                    <td>PN</td><td>Prep-Neg</td><td>0:00</td><td>0:00</td>
+                </tr>
+                <tr class="incomplete" id="speech-Q">
+                    <td>2N</td><td>2NR     </td><td>5:00</td><td>0:00</td>
+                </tr>
+                <tr class="incomplete PA" id="speech-R">
+                    <td>PA</td><td>Prep-Aff</td><td>0:00</td><td>0:00</td>
+                </tr>
+                <tr class="incomplete" id="speech-S">
+                    <td>2A</td><td>2AR     </td><td>5:00</td><td>0:00</td>
+                </tr>
+            </table>
+        </div>
+        <div id="root-footer"></div>
+    </div>
+
+    <footer id="main-footer">
+        <img src="img/region-2-logo-546x173.png">
+    </footer>
+    <table>
+    </table>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='http://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-56618114-1');ga('send','pageview');
+    </script>
+</body>
+</html>

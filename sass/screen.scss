@@ -1,0 +1,413 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/layout";
+@import "compass/css3";
+
+$sand: rgb(176,168,131);
+$green: rgb(97,127,102);
+$red: rgb(204,106,97);
+$trans-white: rgba(255,255,255,0.3);
+$trans-sand: rgba(176,168,131,0.5);
+$trans-grey: rgba(216,216,216,0.5);
+$trans-green: rgba(97,127,102,0.5);
+$trans-red: rgba(204,106,97,0.5);
+
+// Fonts ---------------------------------------------------
+
+@import url(http://fonts.googleapis.com/css?family=Lobster+Two:700);
+@import url(http://fonts.googleapis.com/css?family=Bitter);
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+@include font-face("ErlerDingbats", font-files("ErlerDingbats.ttf"));
+
+@font-face {
+    font-family: 'web_symbolsregular';
+    src: url('../fonts/websymbols-regular-webfont.eot');
+    src: url('../fonts/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/websymbols-regular-webfont.woff2') format('woff2'),
+         url('../fonts/websymbols-regular-webfont.woff') format('woff'),
+         url('../fonts/websymbols-regular-webfont.ttf') format('truetype'),
+         url('../fonts/websymbols-regular-webfont.svg#web_symbolsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+// Compass Sticky Footer ------------------------------------
+
+@include sticky-footer( 2em, "#root", "#root-footer", "#main-footer");
+
+// Body ---------------------------------------------------------
+
+body {
+	max-width: 320px;
+	max-height: 480px;
+	background-image: image_url('hourglass-556x834-2x3.jpg');
+	background-size: 320px 480px;
+	background-repeat: no-repeat;
+}
+
+// Header and Footer for All Pages -----------------------------------------------
+
+header {
+	font-family: 'Lobster Two', cursive;
+	font-size: 2em;
+	font-weight: bold;
+	background-color: $trans-grey;
+	padding: 5px;
+	margin: 2px;
+	border-radius: 5px;
+	.left {
+		text-align: left;
+	}
+	.right {
+		font-family: Bitter, Serif;
+		font-size: .75em;
+		font-weight: bold;
+		float: right;
+		padding-top: 5px;
+		padding-right: 10px;
+		padding-left: .5em;
+		border-left: solid 1px;
+		color: grey;
+	}
+}
+
+// Footer
+
+footer {
+	background-color: $trans-grey;
+	border-radius: 5px;
+	text-align: center;
+	img {
+		height: 80%;
+		padding-top: 1%;
+	}
+}
+
+// Anchor tags
+
+a {
+	color: black;
+	text-decoration: none;
+
+}
+
+
+// Debate style buttons -----------------------------------------------
+
+.debate-style-button {
+	font-family: Bitter, Serif;
+	width: 90%;
+	min-height: 2.5em;
+	margin-top: 3%;
+	margin-right: 5%;
+	margin-left: 5%;
+	padding-bottom: .4em;
+	padding-top: .4em;
+	text-align: center;
+	background-color: $trans-sand;
+	border-radius: 10px;
+	// display: inline-block;
+
+	&:hover {
+	  @include background-image( radial-gradient(white, $sand));
+	}
+
+	h1 {
+		font-size: 2.5em;
+		display: block;
+
+	}
+	h2{
+		font-size: 1.5em;
+	}
+	h3 {
+		padding-top: .25em;
+		font-size: 1em;
+	}
+
+} 
+
+#ld-button {
+	margin-top: 60%
+}
+
+#tp-button {
+}
+
+
+// Speaker Names -------------------------------------------------------
+
+
+form {
+	font-size: 1em;
+}
+
+fieldset {
+	font-family: Lato, Sans-serif;
+	border: 1px solid;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 10px;
+	background-color: $trans-white;
+	label {
+		color: black;
+	}
+	legend {
+		font-family: Bitter, Serif;
+		// font-weight: bold;
+		padding: 2px;
+	}
+	input {
+		border-radius: 5px;
+		padding: 5px;
+		margin: 2px;
+		border: none;
+		background-color: $sand;
+		font-size: 18px;
+		width: 95%;
+	}
+}
+
+#button-prev-next-container {
+	font-family: Bitter, Serif;
+	width: 90%;
+	margin-left: 5%;
+	margin-top: .5em;
+}
+
+.sand-hover:hover {
+	@include background-image( radial-gradient(white, $sand));
+}
+
+.button-prev-next {
+	font-size: 2em;
+	text-align: center;
+	background-color: $trans-sand;
+	border-radius: 10px;
+	padding: .3em;
+	width: 40%;
+	display: inline-block;
+	cursor: pointer;
+
+	&:hover {
+	  @include background-image( radial-gradient(white, $sand));
+	}
+}
+
+
+#button-next{
+	float: right;
+
+
+	&::after {
+		content: image_url('glyphicons/png/glyphicons_223_chevron-right.png');
+		padding-left: .3em;
+		padding-right: .3em;
+	}
+
+}
+
+#button-prev {
+
+	&::before {
+		content: image_url('glyphicons/png/glyphicons_224_chevron-left.png');
+		padding-left: .3em;
+		padding-right: .3em;
+	}
+}
+
+#button-skip {
+	font-family: Bitter, Serif;
+	font-size: 1em;
+	text-align: center;
+	background-color: $trans-sand;
+	border-radius: 10px;
+	padding: .15em;
+	width: 90%;
+	cursor: pointer;
+	margin-left: 5%;
+	margin-top: .5em;
+}
+
+
+// Timer --------------------------------------------------------------------
+
+
+
+// Start page items - Headings, Timers, grid
+#speech-speaker-fieldset {
+}
+
+#speech-speaker-header {
+	font-family: Lato, Sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	#speech-heading {
+		display: inline-block;
+		width: 28%;
+		text-align: center;
+	}
+	#speaker-heading {
+		display: inline-block;
+		width: 65%;
+	}
+}
+
+
+
+// Canvas for the graphic.
+#sand-column {
+	border: solid 1px;
+	background-color: $sand;
+	min-height: 10em;
+	width: 25%;
+	display: inline-block;
+	float: left;
+	border-radius: 10px;
+
+}
+
+
+#timer-container
+{
+}
+
+#timer-display {
+	// height: inherit;
+	margin-top: 12%;
+	margin-right: 5%;
+	font-size: 5em;
+	text-align: center;
+	// background-color: white;
+	float: right;
+	text-align: center;
+}
+
+table {
+	font-family: Lato, Sans-serif;
+	border: solid 1px;
+	width: 95%;
+	margin: 2.5%;
+	border-radius: 10px;
+	td,th {
+		text-align: center;
+		border-right: solid 1px;
+	}
+	th {
+		background-color: grey;
+		font-weight: bold;
+	}
+	tr {
+		border-bottom: solid 1px;
+	}
+}
+
+#start-stop-button {
+	width: 90%;
+	margin: 5%;
+	padding: 5% 0;
+	border-radius: 10px;
+
+	font-family: Bitter, Serif;
+	font-size: 48px;
+	text-align: center;
+}
+
+.start {
+	background-color: $trans-green;
+	&:hover {
+	  @include background-image(radial-gradient(white, $green));
+	  cursor: pointer;
+	}
+}
+.stop {
+	background-color: $trans-red;
+	&:hover {
+	  @include background-image(radial-gradient(white, $red));
+	  cursor: pointer;
+	}
+}
+
+.control-buttons {
+	width: 90%;
+	margin: 0% 5% 5% 5%; // top, right, bottom, left
+
+	font-family: Bitter, Serif; // 
+	font-size: 24px;
+	text-align: center;
+
+    #prev-speech-button {
+ 		width: 30%;
+		padding: 2% 0;
+		border-radius: 10px;
+	  	display: inline-block;
+    }
+    #next-speech-button {
+		width: 60%;
+		padding: 2% 0;
+		border-radius: 10px;
+		display: inline-block;
+    }
+    #up-arrow {
+		padding: 2% 1%;
+		display: inline-block;
+		border-radius: 10px;
+    }
+    #down-arrow {
+		padding: 2% 1%;
+		display: none;
+		border-radius: 10px;
+    }
+}
+
+.iconfont {
+	font-family: "web_symbolsregular";
+}
+
+.active {
+	background-color: $trans-sand;
+	&:hover {
+  		@include background-image(radial-gradient(white, $sand));
+  		cursor: pointer;
+  	}
+}
+.inactive {
+	background-color: $trans-grey;
+}
+
+
+
+// Speeches Grid Classes
+
+.completed {
+	background-color: $trans-red;
+}
+
+.current {
+	background-color: $trans-green;
+
+}
+.incomplete {
+	color: grey;
+}
+
+
+// Well Done border-image
+#well-done-image {
+	// width: 90%;
+	// margin: 0% 5% 5% 5%; // top, right, bottom, left
+	// border: solid 1px;
+	// // border-radius: 10px;
+	background: white;
+	img {
+		max-width: 100%;
+		max-height: 100%;
+	}
+	display: none;
+}

@@ -1,33 +1,85 @@
 // Shorthand for $( document ).ready()
 $(function() {
 
-    console.log( "ready!" );
-    // console.log( GetURLParam("style"));
-    globalSpeakers = {};
-    globalSpeakers['1A'] =  GetURLParam("1A") || "1A";
-    globalSpeakers['2A'] =  GetURLParam("2A") || "2A";
-    globalSpeakers['1N'] =  GetURLParam("1N") || "1N";
-    globalSpeakers['2N'] =  GetURLParam("2N") || "2N";
+    // Get the last word of the title.
+    var title = $("title").text().toLowerCase();
+    var parts = title.split(' ');
+    title = parts[ parts.length-1];
+    console.log( "ready! " + title);
 
-    // Setup the speech.
-    setupSpeech();
+    // branch to the case based on the lower case last word of the title attribute.
+    switch(title) {
+
+    // If this is the first page to pick the style, LD or TP.    
+    case 'style':
+        break;
+
+    // If this is the second page to enter the speaker names.
+    case 'speakers':
+        var debateStyle = GetURLParam("style");
+        if ( debateStyle === "LD") {
+            $(".style-tp").hide();
+            $(".style-ld").show();
+        } else {
+            $(".style.ld").hide();
+            $(".style-tp").show();
+        }
+
+        // Save the style value.
+        localStorage.setItem("style", debateStyle);
 
 
-    $("#start-stop-button").click( startStopClick );
+        // Set the event handling for the next "button" on the speakers form.
+        var speakerForm = $("#speakers-form");
+        if (speakerForm.length > 0) {
+            // console.log("speaker form found");
+            $('#button-next').click( function() {
+                // console.log("form submit");
+                speakerForm.submit();
+            });
+        }
 
-    // Set the event handlers for the previous and next buttons.
-    $("#next-speech-button").click( nextSpeechClick );
-    $("#prev-speech-button").click( prevSpeechClick );
+        break;
 
-    // Set the event handling for the next "button" on the speakers form.
-    var speakerForm = $("#speakers-form");
-    if (speakerForm.length > 0) {
-        console.log("speaker form found");
-        $('#button-next').click( function() {
-            console.log("form submit");
-            speakerForm.submit();
-        });
+    // If this is the third page, the timer.
+    case 'timer':
+
+        // Get the style value.
+        var getDebateStyle = localStorage.getItem("style");
+
+
+        // Save the speakers in an associative array.
+        globalSpeakers = {};
+        globalSpeakers['1A'] =  GetURLParam("1A") || "1A";
+        globalSpeakers['2A'] =  GetURLParam("2A") || "2A";
+        globalSpeakers['1N'] =  GetURLParam("1N") || "1N";
+        globalSpeakers['2N'] =  GetURLParam("2N") || "2N";
+
+        // Remove the speaker table that will not be used.
+        if (getDebateStyle === 'LD') {
+            $("#tp-speech-speaker-table").remove();
+        } else {
+            $("#ld-speech-speaker-table").remove();
+        }
+
+        // Setup the speech.
+        setupSpeech();
+
+        // Set the event handlers.
+        $("#start-stop-button").click( startStopClick );
+
+        // Set the event handlers for the previous and next buttons.
+        $("#next-speech-button").click( nextSpeechClick );
+        $("#prev-speech-button").click( prevSpeechClick );
+
+        // $("#down-arrow").hide();
+        $("#down-arrow").click( upDownArrowClick );
+        $("#up-arrow").click( upDownArrowClick );
+
+        break;
     }
+
+
 
 });
 
@@ -135,6 +187,24 @@ function prevSpeechClick() {
 }
 
 
+function upDownArrowClick() {
+
+    // Hide the current arrow.
+    $(this).css('display', 'none');
+
+    // Show the other.
+    if ( $(this).attr("id") === "down-arrow") {
+        console.log("down arrow click");
+        $("#up-arrow").css('display', 'inline-block');
+        $("#speech-speaker-table").slideDown(500);
+    } else {
+        console.log("up arrow click");
+        $("#down-arrow").css('display', 'inline-block');
+        $("#speech-speaker-table").slideUp(500);
+    }
+}
+
+
 
 
 // Copy the speech time from the row to the display.
@@ -178,7 +248,7 @@ function ButtonStateCheck() {
 
     // If there are no incomplete rows, there is no "next" and so state should be inactive.
     count = $(".incomplete").length + $(".current").length;
-    console.log('count of incomplete and current is' + count);
+    // console.log('count of incomplete and current is' + count);
     var nextState = (count === 0) ? 'inactive' : 'active';
     button = $('#next-speech-button');
     if ( !button.hasClass(nextState) )
@@ -188,15 +258,15 @@ function ButtonStateCheck() {
 
     // If there are no more incomplete or current rows, hide the fieldsets.
     if (count === 0) {
-        $("#start-stop-button").hide(500);
-        $("#timer-container").hide(500);
-        $("#speech-speaker-fieldset").hide(500);
-        $("#well-done-image").show(1000);
+        $("#start-stop-button").slideUp(500);
+        $("#timer-container").slideUp(500);
+        $("#speech-speaker-fieldset").slideUp(500);
+        $("#well-done-image").slideDown(1000);
     } else {
-        $("#well-done-image").hide(1000);
-        $("#speech-speaker-fieldset").show(500);
-        $("#timer-container").show(500);
-        $("#start-stop-button").show(500);
+        $("#well-done-image").slideUp(1000);
+        $("#speech-speaker-fieldset").slideDown(500);
+        $("#timer-container").slideDown(500);
+        $("#start-stop-button").slideDown(500);
     }
 
 }

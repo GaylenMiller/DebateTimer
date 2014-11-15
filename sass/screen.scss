@@ -174,6 +174,12 @@ fieldset {
 	}
 }
 
+.style-tp {
+}
+.style-ld {
+	display: none;
+}
+
 #button-prev-next-container {
 	font-family: Bitter, Serif;
 	width: 90%;
@@ -308,6 +314,10 @@ table {
 	}
 }
 
+#speech-speaker-table {
+	display: none;
+}
+
 #start-stop-button {
 	width: 90%;
 	margin: 5%;
@@ -341,6 +351,7 @@ table {
 	font-family: Bitter, Serif; // 
 	font-size: 24px;
 	text-align: center;
+	display: inline-block;
 
     #prev-speech-button {
  		width: 30%;
@@ -356,12 +367,12 @@ table {
     }
     #up-arrow {
 		padding: 2% 1%;
-		display: inline-block;
+		display: none;
 		border-radius: 10px;
     }
     #down-arrow {
 		padding: 2% 1%;
-		display: none;
+		display: inline-block;
 		border-radius: 10px;
     }
 }

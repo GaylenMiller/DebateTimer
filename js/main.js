@@ -67,6 +67,7 @@ $(function() {
 
         // Set the event handlers.
         $("#start-stop-button").click( startStopClick );
+        $("#timer-container").click( startStopClick );
 
         // Set the event handlers for the previous and next buttons.
         $("#next-speech-button").click( nextSpeechClick );

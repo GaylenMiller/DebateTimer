@@ -7,22 +7,31 @@
 @import "compass/layout";
 @import "compass/css3";
 
+
+// Colors
+
 $sand: rgb(176,168,131);
-$green: rgb(97,127,102);
+// $green: rgb(97,127,102);
+$green: rgb(89, 127, 73);
 $red: rgb(204,106,97);
+$grey: rgb(216,216,216);
 $trans-white: rgba(255,255,255,0.3);
-$trans-sand: rgba(176,168,131,0.5);
-$trans-grey: rgba(216,216,216,0.5);
-$trans-green: rgba(97,127,102,0.5);
+$trans-sand: rgba(176,168,131,0.7);
+$trans-grey: rgba(216,216,216,0.8);
+// $trans-green: rgba(97,127,102,0.5);
+$trans-green: rgba(89, 127, 73,0.5);
 $trans-red: rgba(204,106,97,0.5);
+
+// Settings
+
+$standard-radius: 10px;
+$small-radius: 5px;
 
 // Fonts ---------------------------------------------------
 
 @import url(http://fonts.googleapis.com/css?family=Lobster+Two:700);
 @import url(http://fonts.googleapis.com/css?family=Bitter);
 @import url(http://fonts.googleapis.com/css?family=Lato);
-
-@include font-face("ErlerDingbats", font-files("ErlerDingbats.ttf"));
 
 @font-face {
     font-family: 'web_symbolsregular';
@@ -44,12 +53,20 @@ $trans-red: rgba(204,106,97,0.5);
 // Body ---------------------------------------------------------
 
 body {
-	max-width: 320px;
-	max-height: 480px;
 	background-image: image_url('hourglass-556x834-2x3.jpg');
-	background-size: 320px 480px;
+	background-size: cover;
 	background-repeat: no-repeat;
+
+	max-width: 1000px;
+	margin: auto;
+
+	font-family: Lato, Sans-serif;
+	font-size: 1em;
 }
+
+// img {
+// 	max-width: 100%;
+// }
 
 // Header and Footer for All Pages -----------------------------------------------
 
@@ -58,9 +75,10 @@ header {
 	font-size: 2em;
 	font-weight: bold;
 	background-color: $trans-grey;
-	padding: 5px;
-	margin: 2px;
 	border-radius: 5px;
+	div {
+		padding: 1%;
+	}
 	.left {
 		text-align: left;
 	}
@@ -83,9 +101,11 @@ footer {
 	background-color: $trans-grey;
 	border-radius: 5px;
 	text-align: center;
+
 	img {
-		height: 80%;
-		padding-top: 1%;
+		height: 88%;
+		position: relative;
+		top: 8%;
 	}
 }
 
@@ -104,14 +124,13 @@ a {
 	font-family: Bitter, Serif;
 	width: 90%;
 	min-height: 2.5em;
-	margin-top: 3%;
 	margin-right: 5%;
 	margin-left: 5%;
 	padding-bottom: .4em;
 	padding-top: .4em;
 	text-align: center;
 	background-color: $trans-sand;
-	border-radius: 10px;
+	border-radius: $standard-radius;
 	// display: inline-block;
 
 	&:hover {
@@ -121,7 +140,6 @@ a {
 	h1 {
 		font-size: 2.5em;
 		display: block;
-
 	}
 	h2{
 		font-size: 1.5em;
@@ -134,46 +152,64 @@ a {
 } 
 
 #ld-button {
-	margin-top: 60%
+	margin-top: 50%
 }
 
 #tp-button {
+	margin-top: 5%;
 }
 
 
 // Speaker Names -------------------------------------------------------
 
 
-form {
-	font-size: 1em;
-}
-
 fieldset {
-	font-family: Lato, Sans-serif;
 	border: 1px solid;
-	padding: 10px;
-	margin: 10px;
-	border-radius: 10px;
+	padding: 2%;
+	margin: 2%;
+	border-radius: $standard-radius;
 	background-color: $trans-white;
-	label {
-		color: black;
-	}
 	legend {
 		font-family: Bitter, Serif;
-		// font-weight: bold;
 		padding: 2px;
-	}
-	input {
-		border-radius: 5px;
-		padding: 5px;
-		margin: 2px;
-		border: none;
-		background-color: $sand;
-		font-size: 18px;
-		width: 95%;
 	}
 }
 
+input {
+	border-radius: $small-radius;
+	padding: 5px;
+	margin: 2px;
+	border: none;
+	background-color: $sand;
+	font-size: 1.2em;
+	width: 95%;
+}
+
+.div-with-header {
+	border: 1px solid;
+	padding: 3% 2% 2% 2%;
+	margin: 4% 2% 2% 2%;
+	border-radius: $standard-radius;
+	background-color: $trans-white;
+	position: relative;
+}
+
+
+
+.white-header {
+	font-family: Bitter, Serif;
+	// border: solid 1px;
+	border-radius: $small-radius;
+	background-color: white;
+	padding: .6%;
+	position: absolute;
+	top: -.75em;
+}
+
+
+
+
+// Classes to allow the input fields to be hidden/shown based on the style.
 .style-tp {
 }
 .style-ld {
@@ -192,23 +228,25 @@ fieldset {
 }
 
 .button-prev-next {
+	font-family: Bitter, Serif;
 	font-size: 2em;
+	padding: .3em;
+
+	// height: 2em;
 	text-align: center;
 	background-color: $trans-sand;
-	border-radius: 10px;
-	padding: .3em;
-	width: 40%;
+	border-radius: $standard-radius;
+	// padding: .3em;
 	display: inline-block;
 	cursor: pointer;
-
-	&:hover {
-	  @include background-image( radial-gradient(white, $sand));
-	}
 }
 
 
 #button-next{
+	width: 70%;
+	height: 100%;
 	float: right;
+
 
 
 	&::after {
@@ -220,6 +258,8 @@ fieldset {
 }
 
 #button-prev {
+	width: 15%;
+	height: 100%;
 
 	&::before {
 		content: image_url('glyphicons/png/glyphicons_224_chevron-left.png');
@@ -247,12 +287,9 @@ fieldset {
 
 
 // Start page items - Headings, Timers, grid
-#speech-speaker-fieldset {
-}
 
 #speech-speaker-header {
-	font-family: Lato, Sans-serif;
-	font-size: 18px;
+	font-size: 1.2em;
 	font-weight: bold;
 	#speech-heading {
 		display: inline-block;
@@ -265,67 +302,40 @@ fieldset {
 	}
 }
 
-
+#timer-container {
+}
 
 // Canvas for the graphic.
 #sand-column {
 	border: solid 1px;
-	background-color: $sand;
-	min-height: 10em;
+	// background-color: $sand;
+	// min-height: 9em;
+	height: 170px;
 	width: 25%;
 	display: inline-block;
-	float: left;
-	border-radius: 10px;
-
+	// float: left;
+	border-radius: $standard-radius;
 }
 
-
-#timer-container
-{
-}
 
 #timer-display {
-	// height: inherit;
-	margin-top: 12%;
+	margin-top: 10%;
 	margin-right: 5%;
-	font-size: 5em;
-	text-align: center;
+	font-size: 6em;
 	// background-color: white;
+	display: inline-block;
 	float: right;
 	text-align: center;
 }
 
-table {
-	font-family: Lato, Sans-serif;
-	border: solid 1px;
-	width: 95%;
-	margin: 2.5%;
-	border-radius: 10px;
-	td,th {
-		text-align: center;
-		border-right: solid 1px;
-	}
-	th {
-		background-color: grey;
-		font-weight: bold;
-	}
-	tr {
-		border-bottom: solid 1px;
-	}
-}
-
-#speech-speaker-table {
-	display: none;
-}
 
 #start-stop-button {
-	width: 90%;
-	margin: 5%;
-	padding: 5% 0;
-	border-radius: 10px;
-
+	padding: 2%;
+	margin: 2%;
+	// display: inline-block;
+	border-radius: $standard-radius;
 	font-family: Bitter, Serif;
-	font-size: 48px;
+	font-size: 3em;
 	text-align: center;
 }
 
@@ -345,13 +355,11 @@ table {
 }
 
 .control-buttons {
-	width: 90%;
-	margin: 0% 5% 5% 5%; // top, right, bottom, left
-
 	font-family: Bitter, Serif; // 
-	font-size: 24px;
+	font-size: 1.5em;
 	text-align: center;
-	display: inline-block;
+	margin: 2%;
+	
 
     #prev-speech-button {
  		width: 30%;
@@ -360,21 +368,44 @@ table {
 	  	display: inline-block;
     }
     #next-speech-button {
-		width: 60%;
+		width: 59%;
 		padding: 2% 0;
 		border-radius: 10px;
 		display: inline-block;
     }
     #up-arrow {
-		padding: 2% 1%;
+		padding: 2% 2%;
 		display: none;
 		border-radius: 10px;
     }
     #down-arrow {
-		padding: 2% 1%;
+		padding: 2% 2%;
 		display: inline-block;
 		border-radius: 10px;
     }
+}
+
+
+table {
+	border: solid 1px;
+	width: 95%;
+	margin: 2.5%;
+	border-radius: 10px;
+	td,th {
+		text-align: center;
+		border-right: solid 1px;
+	}
+	th {
+		background-color: grey;
+		font-weight: bold;
+	}
+	tr {
+		border-bottom: solid 1px;
+	}
+}
+
+#speech-speaker-table {
+	display: none;
 }
 
 .iconfont {

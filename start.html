@@ -29,10 +29,10 @@
     <div id="root">
 
         <header>
-            <a href="index.html">
-                <span class="left">Debate Timer</span>
-            </a>
-            <span class="right">Timer</span>
+            <div>
+                <a href="index.html"><span class="left">Debate Timer</span></a>
+                <span class="right">Round</span>
+            </div>
         </header>
 
         <fieldset id="speech-speaker-fieldset">
@@ -42,12 +42,15 @@
                 <span id="speaker-heading">Gaylen Miller</span>
             </div>
         </fieldset>
-        <fieldset id="timer-container">
-            <legend>Time Remaining</legend>
-            <div id="timer-display">0:00</div>
-            <canvas id="sand-column">
-            </canvas>
-        </fieldset>
+
+        <div id="timer-container">
+            <fieldset>
+                <legend>Time Remaining</legend>
+                <canvas id="sand-column"></canvas>
+                <div id="timer-display">0:00</div>
+            </fieldset>
+        </div>
+
         <fieldset id="well-done-image">
             <legend>Well Done!</legend>
             <img src="img/welldone-692x692.jpg">
@@ -172,8 +175,6 @@
     <footer id="main-footer">
         <img src="img/region-2-logo-546x173.png">
     </footer>
-    <table>
-    </table>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>

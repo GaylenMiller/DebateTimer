@@ -1,0 +1,111 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/layout";
+@import "compass/css3";
+
+$sand: rgb(176,168,131);
+$green: rgb(97,127,102);
+$red: rgb(204,106,97);
+$trans-white: rgba(255,255,255,0.3);
+$trans-sand: rgba(176,168,131,0.7);
+$trans-grey: rgba(216,216,216,0.8);
+$trans-green: rgba(97,127,102,0.5);
+$trans-red: rgba(204,106,97,0.5);
+
+// Fonts ---------------------------------------------------
+
+@import url(http://fonts.googleapis.com/css?family=Lobster+Two:700);
+@import url(http://fonts.googleapis.com/css?family=Bitter);
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+@include font-face("ErlerDingbats", font-files("ErlerDingbats.ttf"));
+
+@font-face {
+    font-family: 'web_symbolsregular';
+    src: url('../fonts/websymbols-regular-webfont.eot');
+    src: url('../fonts/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/websymbols-regular-webfont.woff2') format('woff2'),
+         url('../fonts/websymbols-regular-webfont.woff') format('woff'),
+         url('../fonts/websymbols-regular-webfont.ttf') format('truetype'),
+         url('../fonts/websymbols-regular-webfont.svg#web_symbolsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+// Compass Sticky Footer ------------------------------------
+
+@include sticky-footer( 40px, "#root", "#root-footer", "#main-footer");
+
+// Body ---------------------------------------------------------
+
+body {
+	background-image: image_url('hourglass-556x834-2x3.jpg');
+	background-size: 100%;
+
+	background-repeat: no-repeat;
+}
+
+img {
+	max-width: 100%;
+}
+
+// Header and Footer for All Pages -----------------------------------------------
+
+header {
+	font-family: 'Lobster Two', cursive;
+	font-size: 2em;
+	font-weight: bold;
+	background-color: $trans-grey;
+	// padding: 5px;
+	// margin: 2px;
+	border-radius: 5px;
+	#header-div {
+		padding: 1%;
+	}
+	.left {
+		text-align: left;
+	}
+	.right {
+		font-family: Bitter, Serif;
+		font-size: .75em;
+		font-weight: bold;
+		float: right;
+		padding-top: 5px;
+		padding-right: 10px;
+		padding-left: .5em;
+		border-left: solid 1px;
+		color: grey;
+	}
+}
+
+// Footer
+
+footer {
+	background-color: $trans-grey;
+	border-radius: 5px;
+	text-align: center;
+	// padding-top: 2px;
+
+	#footer-image {
+		vertical-align: baseline;
+		
+	}
+
+	#footer-image img{
+		max-height: 36px;
+	}
+}
+
+// Anchor tags
+
+a {
+	color: black;
+	text-decoration: none;
+
+}
+

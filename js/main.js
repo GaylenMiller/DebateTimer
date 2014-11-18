@@ -50,10 +50,10 @@ $(function() {
 
         // Save the speakers in an associative array.
         globalSpeakers = {};
-        globalSpeakers['1A'] =  GetURLParam("1A") || "1A";
-        globalSpeakers['2A'] =  GetURLParam("2A") || "2A";
-        globalSpeakers['1N'] =  GetURLParam("1N") || "1N";
-        globalSpeakers['2N'] =  GetURLParam("2N") || "2N";
+        globalSpeakers['1A'] =  GetURLParam("1A") || "Aff 1";
+        globalSpeakers['2A'] =  GetURLParam("2A") || "Aff 2";
+        globalSpeakers['1N'] =  GetURLParam("1N") || "Neg 1";
+        globalSpeakers['2N'] =  GetURLParam("2N") || "Neg 2";
 
         // Remove the speaker table that will not be used.
         if (getDebateStyle === 'LD') {

@@ -11,6 +11,7 @@
 // Colors
 
 $sand: rgb(176,168,131);
+$light-sand: lighten($sand, 30%);
 // $green: rgb(97,127,102);
 $green: rgb(89, 127, 73);
 $red: rgb(204,106,97);
@@ -181,7 +182,7 @@ input {
 	padding: 5px;
 	margin: 2px;
 	border: none;
-	background-color: $sand;
+	background-color: $light-sand;
 	font-size: 1.2em;
 	width: 95%;
 }

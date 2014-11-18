@@ -77,7 +77,13 @@ $(function() {
         $("#down-arrow").click( upDownArrowClick );
         $("#up-arrow").click( upDownArrowClick );
 
-        break;
+        // Catch the before unload event.
+        window.onbeforeunload = leavingPageWarning;
+        // $(window).bind('beforeunload', function() {
+        //    return 'Leaving with clear all the recorded times!' ;
+        // });
+        // $(window).bind('beforeunload', leavingPageWarning );
+
     }
 
 
@@ -271,6 +277,17 @@ function ButtonStateCheck() {
     }
 
 }
+
+
+
+// Check and see if there is anything to lose;
+
+function leavingPageWarning() {
+    if ( $(".completed").length > 0) {
+        return "Leaving the page discard all recorded times!";
+    }
+}
+
 
 
 // Speech Speaker Table ------------------------------------------

@@ -79,11 +79,6 @@ $(function() {
 
         // Catch the before unload event.
         window.onbeforeunload = leavingPageWarning;
-        // $(window).bind('beforeunload', function() {
-        //    return 'Leaving with clear all the recorded times!' ;
-        // });
-        // $(window).bind('beforeunload', leavingPageWarning );
-
     }
 
 
@@ -284,7 +279,7 @@ function ButtonStateCheck() {
 
 function leavingPageWarning() {
     if ( $(".completed").length > 0) {
-        return "Leaving the page discard all recorded times!";
+        return "Leaving the page will discard all recorded times!";
     }
 }
 

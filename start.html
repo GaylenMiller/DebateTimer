@@ -29,147 +29,148 @@
     <div id="root">
 
         <header>
-            <div>
-                <a href="index.html"><span class="left">Debate Timer</span></a>
-                <span class="right">Round</span>
-            </div>
+            <a href="index.html"><span class="left">Debate Timer</span></a>
+            <span class="right">Round</span>
         </header>
 
-        <div class="div-with-header">
-            <span class="white-header">Speech &amp; Speaker</span>
-            <div id="speech-speaker-header">
-                <span id="speech-heading">1AC</span>
-                <span id="speaker-heading">Gaylen Miller</span>
-            </div>
-        </div>
+        <div class="between-header-footer">
 
-        <div id="timer-container" class="div-with-header">
-            <span class="white-header">Time Remaining</span>
-            <canvas id="sand-column"></canvas>
-            <div id="timer-display">0:00</div>
-        </div>
-
-        <div id="well-done-image" class="div-with-header">
-            <span class="white-header">Well Done!</span>
-            <img src="img/welldone-692x692.jpg">
-        </div>
-        <div id="start-stop-button" class="start">Start</div>
-        <div class="control-buttons">
-            <div id="down-arrow" class="active"><span class="iconfont">{</span> Show</div>
-            <div id="up-arrow" class="active" ><span class="iconfont"}>}</span> Hide</div>
-            <div id="next-speech-button" class="next-speech active">Next Speaker</div>
-        </div>
-        <div id="speech-speaker-table">
-            <hr>
-            <div class="control-buttons">
-                <div id="prev-speech-button" class="prev-speech inactive">Prior Speaker</div>
+            <div id="speech-speaker-container" class="div-with-header">
+                <span class="white-header">Speech &amp; Speaker</span>
+                <div id="speech-speaker-header">
+                    <span id="speech-heading">1AC</span>
+                    <span id="speaker-heading">Gaylen Miller</span>
+                </div>
             </div>
 
-            <table id="tp-speech-speaker-table">
-                <tr>
-                    <th>Spkr</th><th>Speech</th><th>Time</th><th>Actual</th>
-                </tr>
-                <tr class="current">
-                    <td>1A</td><td>1AC     </td><td>8:00</td><td>0:00</td>
-                </tr>
-                <tr class="incomplete">
-                    <td>2N</td><td>Cross X </td><td>3:00</td><td>0:00</td>
-                </tr>
-                <tr class="incomplete PN">
-                    <td>PN</td><td>Prep-Neg</td><td>5:00</td><td>0:00</td>
-                </tr>
-                <tr class="incomplete">
-                    <td>1N</td><td>1NC     </td><td>8:00</td><td>0:00</td>
-                </tr>
-                <tr class="incomplete">
-                    <td>1A</td><td>Cross X </td><td>3:00</td><td>0:00</td>
-                </tr>
-                <tr class="incomplete PA">
-                    <td>PA</td><td>Prep-Aff</td><td>5:00</td><td>0:00</td>
-                </tr>
-                <tr class="incomplete">
-                    <td>2A</td><td>2AC     </td><td>8:00</td><td>0:00</td>
-                </tr>
-                <tr class="incomplete">
-                    <td>1N</td><td>Cross X </td><td>3:00</td><td>0:00</td>
-                </tr>
-                <tr class="incomplete PN">
-                    <td>PN</td><td>Prep-Neg</td><td>0:00</td><td>0:00</td>
-                </tr>
-                <tr class="incomplete">
-                    <td>2N</td><td>2NC     </td><td>8:00</td><td>0:00</td>
-                </tr>
-                <tr class="incomplete">
-                    <td>2A</td><td>Cross X </td><td>3:00</td><td>0:00</td>
-                </tr>
-                <tr class="incomplete PN">
-                    <td>PN</td><td>Prep-Neg</td><td>0:00</td><td>0:00</td>
-                </tr>
-                <tr class="incomplete">
-                    <td>1N</td><td>1NR     </td><td>5:00</td><td>0:00</td>
-                </tr>
-                <tr class="incomplete PA">
-                    <td>PA</td><td>Prep-Aff</td><td>0:00</td><td>0:00</td>
-                </tr>
-                <tr class="incomplete">
-                    <td>1A</td><td>1AR     </td><td>5:00</td><td>0:00</td>
-                </tr>
-                <tr class="incomplete PN">
-                    <td>PN</td><td>Prep-Neg</td><td>0:00</td><td>0:00</td>
-                </tr>
-                <tr class="incomplete">
-                    <td>2N</td><td>2NR     </td><td>5:00</td><td>0:00</td>
-                </tr>
-                <tr class="incomplete PA">
-                    <td>PA</td><td>Prep-Aff</td><td>0:00</td><td>0:00</td>
-                </tr>
-                <tr class="incomplete">
-                    <td>2A</td><td>2AR     </td><td>5:00</td><td>0:00</td>
-                </tr>
-            </table>
+            <div id="timer-container" class="div-with-header">
+                <span class="white-header">Time Remaining</span>
+                <canvas id="sand-column"></canvas>
+                <div id="timer-display">0:00</div>
+            </div>
+
+            <div id="well-done-image" class="div-with-header">
+                <span class="white-header">Well Done!</span>
+                <img src="img/welldone-692x692.jpg">
+                <span class="control-buttons white-footer">Restart</span>
+            </div>
+
+            <div id="start-stop-button" class="start">Start</div>
+
+            <div id="down-arrow" class="control-buttons active"><span class="iconfont">{</span> Show</div>
+            <div id="up-arrow" class="control-buttons active" ><span class="iconfont"}>}</span> Hide</div>
+            <div id="next-speech-button" class="control-buttons active">Next Speaker</div>
+
+            <div id="speech-speaker-table">
+                <hr>
+                <div id="prev-speech-button" class="control-buttons inactive">Prior Speaker</div>
+
+                <table id="tp-speech-speaker-table">
+                    <tr>
+                        <th>Spkr</th><th>Speech</th><th>Time</th><th>Actual</th>
+                    </tr>
+                    <tr class="current">
+                        <td>1A</td><td>1AC     </td><td>8:00</td><td>0:00</td>
+                    </tr>
+                    <tr class="incomplete">
+                        <td>2N</td><td>Cross X </td><td>3:00</td><td>0:00</td>
+                    </tr>
+                    <tr class="incomplete PN">
+                        <td>PN</td><td>Prep-Neg</td><td>5:00</td><td>0:00</td>
+                    </tr>
+                    <tr class="incomplete">
+                        <td>1N</td><td>1NC     </td><td>8:00</td><td>0:00</td>
+                    </tr>
+                    <tr class="incomplete">
+                        <td>1A</td><td>Cross X </td><td>3:00</td><td>0:00</td>
+                    </tr>
+                    <tr class="incomplete PA">
+                        <td>PA</td><td>Prep-Aff</td><td>5:00</td><td>0:00</td>
+                    </tr>
+                    <tr class="incomplete">
+                        <td>2A</td><td>2AC     </td><td>8:00</td><td>0:00</td>
+                    </tr>
+                    <tr class="incomplete">
+                        <td>1N</td><td>Cross X </td><td>3:00</td><td>0:00</td>
+                    </tr>
+                    <tr class="incomplete PN">
+                        <td>PN</td><td>Prep-Neg</td><td>0:00</td><td>0:00</td>
+                    </tr>
+                    <tr class="incomplete">
+                        <td>2N</td><td>2NC     </td><td>8:00</td><td>0:00</td>
+                    </tr>
+                    <tr class="incomplete">
+                        <td>2A</td><td>Cross X </td><td>3:00</td><td>0:00</td>
+                    </tr>
+                    <tr class="incomplete PN">
+                        <td>PN</td><td>Prep-Neg</td><td>0:00</td><td>0:00</td>
+                    </tr>
+                    <tr class="incomplete">
+                        <td>1N</td><td>1NR     </td><td>5:00</td><td>0:00</td>
+                    </tr>
+                    <tr class="incomplete PA">
+                        <td>PA</td><td>Prep-Aff</td><td>0:00</td><td>0:00</td>
+                    </tr>
+                    <tr class="incomplete">
+                        <td>1A</td><td>1AR     </td><td>5:00</td><td>0:00</td>
+                    </tr>
+                    <tr class="incomplete PN">
+                        <td>PN</td><td>Prep-Neg</td><td>0:00</td><td>0:00</td>
+                    </tr>
+                    <tr class="incomplete">
+                        <td>2N</td><td>2NR     </td><td>5:00</td><td>0:00</td>
+                    </tr>
+                    <tr class="incomplete PA">
+                        <td>PA</td><td>Prep-Aff</td><td>0:00</td><td>0:00</td>
+                    </tr>
+                    <tr class="incomplete">
+                        <td>2A</td><td>2AR     </td><td>5:00</td><td>0:00</td>
+                    </tr>
+                </table>
 
 
-            <table id="ld-speech-speaker-table">
-                <tr>
-                    <th>Spkr</th><th>Speech</th><th>Time</th><th>Actual</th>
-                </tr>
-                <tr class="current">
-                    <td>1A</td><td>AC      </td><td>6:00</td><td>0:00</td>
-                </tr>
-                <tr class="incomplete">
-                    <td>1N</td><td>Cross X </td><td>3:00</td><td>0:00</td>
-                </tr>
-                <tr class="incomplete PN">
-                    <td>PN</td><td>Prep-Neg</td><td>5:00</td><td>0:00</td>
-                </tr>
-                <tr class="incomplete">
-                    <td>1N</td><td>NC      </td><td>7:00</td><td>0:00</td>
-                </tr>
-                <tr class="incomplete">
-                    <td>1A</td><td>Cross X </td><td>3:00</td><td>0:00</td>
-                </tr>
-                <tr class="incomplete PA">
-                    <td>PA</td><td>Prep-Aff</td><td>5:00</td><td>0:00</td>
-                </tr>
-                <tr class="incomplete">
-                    <td>1A</td><td>1AR     </td><td>4:00</td><td>0:00</td>
-                </tr>
-                <tr class="incomplete PN">
-                    <td>PN</td><td>Prep-Neg</td><td>0:00</td><td>0:00</td>
-                </tr>
-                <tr class="incomplete">
-                    <td>1N</td><td>NR      </td><td>6:00</td><td>0:00</td>
-                </tr>
-                <tr class="incomplete PA">
-                    <td>PA</td><td>Prep-Aff</td><td>0:00</td><td>0:00</td>
-                </tr>
-                <tr class="incomplete">
-                    <td>1A</td><td>2AR     </td><td>3:00</td><td>0:00</td>
-                </tr>
-            </table>
+                <table id="ld-speech-speaker-table">
+                    <tr>
+                        <th>Spkr</th><th>Speech</th><th>Time</th><th>Actual</th>
+                    </tr>
+                    <tr class="current">
+                        <td>1A</td><td>AC      </td><td>6:00</td><td>0:00</td>
+                    </tr>
+                    <tr class="incomplete">
+                        <td>1N</td><td>Cross X </td><td>3:00</td><td>0:00</td>
+                    </tr>
+                    <tr class="incomplete PN">
+                        <td>PN</td><td>Prep-Neg</td><td>5:00</td><td>0:00</td>
+                    </tr>
+                    <tr class="incomplete">
+                        <td>1N</td><td>NC      </td><td>7:00</td><td>0:00</td>
+                    </tr>
+                    <tr class="incomplete">
+                        <td>1A</td><td>Cross X </td><td>3:00</td><td>0:00</td>
+                    </tr>
+                    <tr class="incomplete PA">
+                        <td>PA</td><td>Prep-Aff</td><td>5:00</td><td>0:00</td>
+                    </tr>
+                    <tr class="incomplete">
+                        <td>1A</td><td>1AR     </td><td>4:00</td><td>0:00</td>
+                    </tr>
+                    <tr class="incomplete PN">
+                        <td>PN</td><td>Prep-Neg</td><td>0:00</td><td>0:00</td>
+                    </tr>
+                    <tr class="incomplete">
+                        <td>1N</td><td>NR      </td><td>6:00</td><td>0:00</td>
+                    </tr>
+                    <tr class="incomplete PA">
+                        <td>PA</td><td>Prep-Aff</td><td>0:00</td><td>0:00</td>
+                    </tr>
+                    <tr class="incomplete">
+                        <td>1A</td><td>2AR     </td><td>3:00</td><td>0:00</td>
+                    </tr>
+                </table>
 
 
 
+            </div>
         </div>
         <div id="root-footer"></div>
     </div>

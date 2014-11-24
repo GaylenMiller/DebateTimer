@@ -57,6 +57,8 @@ $small-radius: 5px;
 body {
 
 	max-width: 1000px;
+	min-width: 300px;
+	min-height: 340px;
 	margin: auto;
 
 	font-family: Lato, Sans-serif;
@@ -89,7 +91,7 @@ header {
 	}
 	.right {
 		font-family: Bitter, Serif;
-		font-size: .75em;
+		font-size: .70em;
 		font-weight: bold;
 		float: right;
 		padding-top: 5px;
@@ -125,18 +127,22 @@ a {
 
 // Debate style buttons -----------------------------------------------
 
+#debate-style_button_container {
+	bottom: 15%;
+	position: absolute;
+	margin-left: 5%;
+	width: 90%;
+}
+
 .debate-style-button {
 	font-family: Bitter, Serif;
-	width: 90%;
 	min-height: 2.5em;
-	margin-right: 5%;
-	margin-left: 5%;
+	width: 100%;
 	padding-bottom: .4em;
 	padding-top: .4em;
 	text-align: center;
 	background-color: $trans-sand;
 	border-radius: $standard-radius;
-	// display: inline-block;
 
 	&:hover {
 	  @include background-image( radial-gradient(white, $sand));
@@ -156,17 +162,17 @@ a {
 
 } 
 
-#ld-button {
-	margin-top: 50%
-}
-
 #tp-button {
-	margin-top: 5%;
+	margin-top: 1.5em;
 }
 
 
 // Speaker Names -------------------------------------------------------
 
+.between-header-footer {
+	margin-left: 2%;
+	margin-right: 2%;
+}
 
 fieldset {
 	border: 1px solid;
@@ -180,20 +186,32 @@ fieldset {
 	}
 }
 
+label {
+	display: inline-block;
+	font-family: Bitter, Serif;
+	font-weight: bold;
+	border: solid 1px #d8d8d8;
+	border-radius: $small-radius;
+	background-color: white;
+	padding: .3em;
+}
+
 input {
+	display: inline-block;
 	border-radius: $small-radius;
 	padding: 5px;
 	margin: 2px;
 	border: none;
 	background-color: $light-sand;
 	font-size: 1.2em;
-	width: 95%;
+	width: 85%;
 }
 
 .div-with-header {
 	border: 1px solid;
 	padding: 5% 2% 2% 2%;
-	margin: 4% 2% 2% 2%;
+	margin-top: 4%;
+	margin-bottom: 2%;
 	border-radius: $standard-radius;
 	background-color: $trans-white;
 	position: relative;
@@ -224,9 +242,9 @@ input {
 
 #button-prev-next-container {
 	font-family: Bitter, Serif;
-	width: 90%;
-	margin-left: 5%;
-	margin-top: .5em;
+	width: 100%;
+	// margin-left: 5%;
+	margin-top: 2%;
 }
 
 .sand-hover:hover {
@@ -235,7 +253,7 @@ input {
 
 .button-prev-next {
 	font-family: Bitter, Serif;
-	font-size: 2em;
+	font-size: 1.7em;
 	padding: .3em;
 
 	// height: 2em;
@@ -251,7 +269,8 @@ input {
 #button-next{
 	width: 70%;
 	height: 100%;
-	float: right;
+	float: left;
+	margin-left: 2%;
 
 	&::after {
 		content: image_url('glyphicons/png/glyphicons_223_chevron-right.png');
@@ -264,6 +283,7 @@ input {
 #button-prev {
 	width: 15%;
 	height: 100%;
+	float: left;
 
 	&::before {
 		content: image_url('glyphicons/png/glyphicons_224_chevron-left.png');
@@ -289,7 +309,6 @@ input {
 // Timer --------------------------------------------------------------------
 
 
-
 // Start page items - Headings, Timers, grid
 
 #speech-speaker-header {
@@ -312,35 +331,29 @@ input {
 // Canvas for the graphic.
 #sand-column {
 	border: solid 1px;
-	// background-color: $sand;
-	// min-height: 9em;
-	height: 37vh;
 	width: 20%;
-	display: inline-block;
-	// float: left;
+	position: absolute;
+	height: 75%;
+	bottom: 4%;
 	border-radius: $standard-radius;
 }
 
 
 #timer-display {
-	margin-top: 10vmin;
-	margin-right: 5%;
-	font-size: 25vmin;
-	// background-color: white;
+	width: 100%;
+	font-size: 5em;
 	display: inline-block;
-	float: right;
-	text-align: center;
+	text-align: right;
 }
 
 
 #start-stop-button {
-	padding: 2%;
-	margin: 2%;
-	// display: inline-block;
-	border-radius: $standard-radius;
 	font-family: Bitter, Serif;
-	font-size: 3em;
+	font-size: 2.5rem;
 	text-align: center;
+	padding: 2%;
+	margin-bottom: 2%;
+	border-radius: $standard-radius;
 }
 
 .start {
@@ -358,42 +371,43 @@ input {
 	}
 }
 
-.control-buttons {
-	font-family: Bitter, Serif; // 
-	font-size: 1.5em;
-	text-align: center;
-	margin: 2%;
-	
 
-    #prev-speech-button {
- 		width: 90%;
-		padding: 2% 0;
-		border-radius: 10px;
-	  	display: inline-block;
-    }
-    #next-speech-button {
-		width: 65%;
-		padding: 2% 0;
-		border-radius: 10px;
-		display: inline-block;
-    }
-    #up-arrow {
-		padding: 2% 2%;
-		display: none;
-		border-radius: 10px;
-    }
-    #down-arrow {
-		padding: 2% 2%;
-		display: inline-block;
-		border-radius: 10px;
-    }
+.control-buttons {
+	font-family: Bitter, Serif; 
+	font-size: 1.6rem;
+	text-align: center;
+	border-radius: $standard-radius;
+	display: inline-block;
+}
+
+#up-arrow {
+	width: 30%;
+	padding: 2% 0%;
+	display: none;
+}
+
+#down-arrow {
+	width: 30%;
+	padding: 2% 0%;
+}
+
+#next-speech-button {
+	width: 68%;
+	padding: 2% 0;
+}
+
+#prev-speech-button {
+	width: 100%;
+	padding: 2% 0;
+	margin-bottom: 2%;
+	// margin-left: 2%;
 }
 
 
 table {
 	border: solid 1px;
-	width: 95%;
-	margin: 2.5%;
+	width: 100%;
+	// margin: 2.5%;
 	border-radius: 10px;
 	td,th {
 		text-align: center;

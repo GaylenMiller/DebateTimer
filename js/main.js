@@ -262,11 +262,11 @@ function ButtonStateCheck() {
     if (count === 0) {
         $("#start-stop-button").slideUp(500);
         $("#timer-container").slideUp(500);
-        $("#speech-speaker-fieldset").slideUp(500);
+        $("#speech-speaker-container").slideUp(500);
         $("#well-done-image").slideDown(1000);
     } else {
         $("#well-done-image").slideUp(1000);
-        $("#speech-speaker-fieldset").slideDown(500);
+        $("#speech-speaker-container").slideDown(500);
         $("#timer-container").slideDown(500);
         $("#start-stop-button").slideDown(500);
     }

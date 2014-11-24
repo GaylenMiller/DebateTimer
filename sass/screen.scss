@@ -316,12 +316,12 @@ input {
 	font-weight: bold;
 	#speech-heading {
 		display: inline-block;
-		width: 28%;
+		min-width: 30%;
 		text-align: center;
 	}
 	#speaker-heading {
 		display: inline-block;
-		width: 65%;
+		width: 63%;
 	}
 }
 

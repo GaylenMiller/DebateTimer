@@ -365,13 +365,13 @@ input {
 /* line 317, ../sass/screen.scss */
 #speech-speaker-header #speech-heading {
   display: inline-block;
-  width: 28%;
+  min-width: 30%;
   text-align: center;
 }
 /* line 322, ../sass/screen.scss */
 #speech-speaker-header #speaker-heading {
   display: inline-block;
-  width: 65%;
+  width: 63%;
 }
 
 /* line 332, ../sass/screen.scss */

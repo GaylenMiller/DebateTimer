@@ -278,7 +278,7 @@ function ButtonStateCheck() {
 // Check and see if there is anything to lose;
 
 function leavingPageWarning() {
-    if ( $(".completed").length > 0) {
+    if ( $(".completed").length > 0 && $(".incomplete").length > 0 ) {
         return "Leaving the page will discard all recorded times!";
     }
 }

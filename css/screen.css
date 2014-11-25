@@ -540,3 +540,58 @@ table tr {
   max-width: 100%;
   max-height: 100%;
 }
+
+@media screen and (min-width: 320px) {
+  /* line 477, ../sass/screen.scss */
+  #timer-display {
+    font-size: 6em;
+  }
+}
+@media screen and (min-width: 360px) {
+  /* line 484, ../sass/screen.scss */
+  #timer-display {
+    font-size: 7em;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 491, ../sass/screen.scss */
+  #timer-display {
+    font-size: 15em;
+  }
+
+  /* line 495, ../sass/screen.scss */
+  header {
+    font-size: 3em;
+  }
+
+  /* line 498, ../sass/screen.scss */
+  #speech-speaker-header {
+    font-size: 2em;
+  }
+
+  /* line 501, ../sass/screen.scss */
+  #start-stop-button {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 980px) {
+  /* line 507, ../sass/screen.scss */
+  #timer-display {
+    font-size: 20em;
+  }
+
+  /* line 511, ../sass/screen.scss */
+  header {
+    font-size: 4em;
+  }
+
+  /* line 514, ../sass/screen.scss */
+  #speech-speaker-header {
+    font-size: 3em;
+  }
+
+  /* line 517, ../sass/screen.scss */
+  #start-stop-button {
+    font-size: 4rem;
+  }
+}

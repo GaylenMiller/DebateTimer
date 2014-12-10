@@ -1,3 +1,5 @@
+(function() {
+
 // Shorthand for $( document ).ready()
 $(function() {
 
@@ -470,3 +472,4 @@ function GetURLParam(sParam)
     }
 }
 
+})();

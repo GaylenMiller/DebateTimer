@@ -17,7 +17,7 @@ $green: rgb(89, 127, 73);
 $red: rgb(204,106,97);
 $grey: rgb(216,216,216);
 $white: rgb(224,224,224);
-$trans-white: rgba(255,255,255,0.3);
+$trans-white: rgba(255,255,255,0.8);
 $trans-sand: rgba(176,168,131,0.7);
 $trans-grey: rgba(216,216,216,0.8);
 // $trans-green: rgba(97,127,102,0.5);
@@ -82,7 +82,7 @@ header {
 	font-size: 2em;
 	font-weight: bold;
 	background-color: $trans-grey;
-	border-radius: 5px;
+	// border-radius: 5px;
 	div {
 		padding: 1%;
 	}
@@ -106,7 +106,7 @@ header {
 
 footer {
 	background-color: $trans-grey;
-	border-radius: 5px;
+	//border-radius: 5px;
 	text-align: center;
 
 	img {
@@ -462,6 +462,7 @@ table {
 }
 .incomplete {
 	color: grey;
+	background-color: $trans-white;
 }
 
 

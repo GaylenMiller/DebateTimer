@@ -5,7 +5,7 @@
 @import url(http://fonts.googleapis.com/css?family=Lobster+Two:700);
 @import url(http://fonts.googleapis.com/css?family=Bitter);
 @import url(http://fonts.googleapis.com/css?family=Lato);
-/* line 5, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -27,45 +27,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -77,12 +77,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: normal;
   font-style: normal;
 }
-/* line 10, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/layout/_sticky-footer.scss */
+/* line 10, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/layout/_sticky-footer.scss */
 html, body {
   height: 100%;
 }
 
-/* line 12, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/layout/_sticky-footer.scss */
+/* line 12, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/layout/_sticky-footer.scss */
 #root {
   clear: both;
   min-height: 100%;
@@ -90,12 +90,12 @@ html, body {
   height: 100%;
   margin-bottom: -2em;
 }
-/* line 18, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/layout/_sticky-footer.scss */
+/* line 18, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/layout/_sticky-footer.scss */
 #root #root-footer {
   height: 2em;
 }
 
-/* line 20, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/layout/_sticky-footer.scss */
+/* line 20, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/layout/_sticky-footer.scss */
 #main-footer {
   clear: both;
   position: relative;
@@ -130,7 +130,6 @@ header {
   font-size: 2em;
   font-weight: bold;
   background-color: rgba(216, 216, 216, 0.8);
-  border-radius: 5px;
 }
 /* line 86, ../sass/screen.scss */
 header div {
@@ -156,7 +155,6 @@ header .right {
 /* line 107, ../sass/screen.scss */
 footer {
   background-color: rgba(216, 216, 216, 0.8);
-  border-radius: 5px;
   text-align: center;
 }
 /* line 112, ../sass/screen.scss */
@@ -229,7 +227,7 @@ fieldset {
   padding: 2%;
   margin: 2%;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 /* line 183, ../sass/screen.scss */
 fieldset legend {
@@ -267,7 +265,7 @@ input {
   margin-top: 4%;
   margin-bottom: 2%;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.8);
   position: relative;
 }
 
@@ -532,101 +530,102 @@ table tr {
 /* line 463, ../sass/screen.scss */
 .incomplete {
   color: grey;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
-/* line 469, ../sass/screen.scss */
+/* line 470, ../sass/screen.scss */
 #well-done-image {
   background: white;
   display: none;
 }
-/* line 475, ../sass/screen.scss */
+/* line 476, ../sass/screen.scss */
 #well-done-image img {
   max-width: 100%;
   max-height: 100%;
 }
 
-/* line 482, ../sass/screen.scss */
+/* line 483, ../sass/screen.scss */
 .block {
   display: block;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 488, ../sass/screen.scss */
+  /* line 489, ../sass/screen.scss */
   #timer-display {
     font-size: 6em;
   }
 }
 @media screen and (min-width: 360px) {
-  /* line 495, ../sass/screen.scss */
+  /* line 496, ../sass/screen.scss */
   #timer-display {
     font-size: 7em;
   }
 }
 @media screen and (min-width: 480px) {
-  /* line 502, ../sass/screen.scss */
+  /* line 503, ../sass/screen.scss */
   header {
     font-size: 2.5em;
   }
 
-  /* line 505, ../sass/screen.scss */
+  /* line 506, ../sass/screen.scss */
   #speech-speaker-header {
     font-size: 2em;
   }
 
-  /* line 508, ../sass/screen.scss */
+  /* line 509, ../sass/screen.scss */
   #timer-display {
     font-size: 10em;
   }
 }
 @media screen and (min-width: 620px) {
-  /* line 515, ../sass/screen.scss */
+  /* line 516, ../sass/screen.scss */
   #speech-speaker-header {
     font-size: 2.5em;
   }
 
-  /* line 519, ../sass/screen.scss */
+  /* line 520, ../sass/screen.scss */
   #timer-display {
     font-size: 12em;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 526, ../sass/screen.scss */
+  /* line 527, ../sass/screen.scss */
   #timer-display {
     font-size: 15em;
   }
 
-  /* line 530, ../sass/screen.scss */
+  /* line 531, ../sass/screen.scss */
   header {
     font-size: 3em;
   }
 
-  /* line 533, ../sass/screen.scss */
+  /* line 534, ../sass/screen.scss */
   #speech-speaker-header {
     font-size: 3em;
   }
 
-  /* line 537, ../sass/screen.scss */
+  /* line 538, ../sass/screen.scss */
   #start-stop-button {
     font-size: 3rem;
   }
 }
 @media screen and (min-width: 980px) {
-  /* line 543, ../sass/screen.scss */
+  /* line 544, ../sass/screen.scss */
   #timer-display {
     font-size: 20em;
   }
 
-  /* line 547, ../sass/screen.scss */
+  /* line 548, ../sass/screen.scss */
   header {
     font-size: 4em;
   }
 
-  /* line 550, ../sass/screen.scss */
+  /* line 551, ../sass/screen.scss */
   #speech-speaker-header {
     font-size: 3em;
   }
 
-  /* line 553, ../sass/screen.scss */
+  /* line 554, ../sass/screen.scss */
   #start-stop-button {
     font-size: 4rem;
   }

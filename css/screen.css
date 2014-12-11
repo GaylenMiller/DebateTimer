@@ -272,7 +272,7 @@ input {
   width: 85%;
 }
 
-/* line 222, ../sass/screen.scss */
+/* line 223, ../sass/screen.scss */
 .div-with-header {
   border: 1px solid;
   padding: 18px 5px 5px 5px;
@@ -282,7 +282,7 @@ input {
   position: relative;
 }
 
-/* line 234, ../sass/screen.scss */
+/* line 235, ../sass/screen.scss */
 .white-header {
   font-family: Bitter, Serif;
   font-weight: bold;
@@ -294,19 +294,19 @@ input {
   top: -.75em;
 }
 
-/* line 251, ../sass/screen.scss */
-.style-ld {
-  display: none;
-}
-
-/* line 255, ../sass/screen.scss */
+/* line 247, ../sass/screen.scss */
 #button-prev-next-container {
   font-family: Bitter, Serif;
   width: 100%;
   padding-top: 10px;
 }
 
-/* line 263, ../sass/screen.scss */
+/* line 260, ../sass/screen.scss */
+.style-ld {
+  display: none;
+}
+
+/* line 264, ../sass/screen.scss */
 .sand-hover:hover {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2IwYTg4MyIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
@@ -315,7 +315,7 @@ input {
   background-image: radial-gradient(#ffffff, #b0a883);
 }
 
-/* line 267, ../sass/screen.scss */
+/* line 268, ../sass/screen.scss */
 .button-prev-next {
   font-family: Bitter, Serif;
   font-size: 1.7em;
@@ -327,34 +327,32 @@ input {
   cursor: pointer;
 }
 
-/* line 282, ../sass/screen.scss */
+/* line 283, ../sass/screen.scss */
 #button-next {
-  width: 70%;
-  height: 100%;
-  float: left;
-  margin-left: 2%;
+  width: 79%;
+  float: right;
 }
-/* line 288, ../sass/screen.scss */
+/* line 286, ../sass/screen.scss */
 #button-next::after {
   content: url('../img/glyphicons/png/glyphicons_223_chevron-right.png?1372836252');
   padding-left: .3em;
   padding-right: .3em;
 }
 
-/* line 296, ../sass/screen.scss */
+/* line 294, ../sass/screen.scss */
 #button-prev {
-  width: 15%;
-  height: 100%;
+  width: 14%;
   float: left;
+  padding-top: 17px;
 }
-/* line 301, ../sass/screen.scss */
+/* line 299, ../sass/screen.scss */
 #button-prev::before {
   content: url('../img/glyphicons/png/glyphicons_224_chevron-left.png?1372836374');
   padding-left: .3em;
   padding-right: .3em;
 }
 
-/* line 308, ../sass/screen.scss */
+/* line 306, ../sass/screen.scss */
 #button-skip {
   font-family: Bitter, Serif;
   font-size: 1em;
@@ -368,24 +366,24 @@ input {
   margin-top: .5em;
 }
 
-/* line 327, ../sass/screen.scss */
+/* line 325, ../sass/screen.scss */
 #speech-speaker-header {
   font-size: 1.2em;
   font-weight: bold;
 }
-/* line 330, ../sass/screen.scss */
+/* line 328, ../sass/screen.scss */
 #speech-speaker-header #speech-heading {
   display: inline-block;
   min-width: 30%;
   text-align: center;
 }
-/* line 335, ../sass/screen.scss */
+/* line 333, ../sass/screen.scss */
 #speech-speaker-header #speaker-heading {
   display: inline-block;
   width: 63%;
 }
 
-/* line 345, ../sass/screen.scss */
+/* line 343, ../sass/screen.scss */
 #sand-column {
   border: solid 1px;
   width: 20%;
@@ -395,7 +393,7 @@ input {
   border-radius: 10px;
 }
 
-/* line 355, ../sass/screen.scss */
+/* line 353, ../sass/screen.scss */
 #timer-display {
   width: 100%;
   font-size: 5em;
@@ -403,7 +401,7 @@ input {
   text-align: right;
 }
 
-/* line 363, ../sass/screen.scss */
+/* line 361, ../sass/screen.scss */
 #start-stop-button {
   font-family: Bitter, Serif;
   font-size: 2.5rem;
@@ -413,11 +411,11 @@ input {
   border-radius: 10px;
 }
 
-/* line 373, ../sass/screen.scss */
+/* line 371, ../sass/screen.scss */
 .start {
   background-color: rgba(89, 127, 73, 0.8);
 }
-/* line 375, ../sass/screen.scss */
+/* line 373, ../sass/screen.scss */
 .start:hover {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzU5N2Y0OSIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
@@ -427,11 +425,11 @@ input {
   cursor: pointer;
 }
 
-/* line 380, ../sass/screen.scss */
+/* line 378, ../sass/screen.scss */
 .stop {
   background-color: rgba(204, 106, 97, 0.8);
 }
-/* line 382, ../sass/screen.scss */
+/* line 380, ../sass/screen.scss */
 .stop:hover {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2NjNmE2MSIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
@@ -441,7 +439,7 @@ input {
   cursor: pointer;
 }
 
-/* line 389, ../sass/screen.scss */
+/* line 387, ../sass/screen.scss */
 .control-buttons {
   font-family: Bitter, Serif;
   font-size: 1.6rem;
@@ -452,71 +450,71 @@ input {
   margin-top: 5px;
 }
 
-/* line 399, ../sass/screen.scss */
+/* line 397, ../sass/screen.scss */
 #up-arrow {
   width: 30%;
   display: none;
 }
 
-/* line 405, ../sass/screen.scss */
+/* line 403, ../sass/screen.scss */
 #down-arrow {
   width: 30%;
 }
 
-/* line 410, ../sass/screen.scss */
+/* line 408, ../sass/screen.scss */
 #next-speech-button {
   width: 68%;
 }
 
-/* line 415, ../sass/screen.scss */
+/* line 413, ../sass/screen.scss */
 #prev-speech-button {
   width: 100%;
   margin-bottom: 2%;
 }
 
-/* line 422, ../sass/screen.scss */
+/* line 420, ../sass/screen.scss */
 #well-done-image a {
   padding-left: 2%;
   padding-right: 2%;
   margin-top: 2%;
 }
 
-/* line 429, ../sass/screen.scss */
+/* line 427, ../sass/screen.scss */
 table {
   border: solid 1px;
   width: 100%;
   border-radius: 10px;
 }
-/* line 434, ../sass/screen.scss */
+/* line 432, ../sass/screen.scss */
 table td, table th {
   text-align: center;
   border-right: solid 1px;
 }
-/* line 438, ../sass/screen.scss */
+/* line 436, ../sass/screen.scss */
 table th {
   background-color: grey;
   font-weight: bold;
 }
-/* line 442, ../sass/screen.scss */
+/* line 440, ../sass/screen.scss */
 table tr {
   border-bottom: solid 1px;
 }
 
-/* line 447, ../sass/screen.scss */
+/* line 445, ../sass/screen.scss */
 #speech-speaker-table {
   display: none;
 }
 
-/* line 451, ../sass/screen.scss */
+/* line 449, ../sass/screen.scss */
 .iconfont {
   font-family: "web_symbolsregular";
 }
 
-/* line 455, ../sass/screen.scss */
+/* line 453, ../sass/screen.scss */
 .active {
   background-color: rgba(176, 168, 131, 0.7);
 }
-/* line 457, ../sass/screen.scss */
+/* line 455, ../sass/screen.scss */
 .active:hover {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2IwYTg4MyIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
@@ -526,120 +524,120 @@ table tr {
   cursor: pointer;
 }
 
-/* line 462, ../sass/screen.scss */
+/* line 460, ../sass/screen.scss */
 .inactive {
   background-color: rgba(216, 216, 216, 0.8);
 }
 
-/* line 470, ../sass/screen.scss */
+/* line 468, ../sass/screen.scss */
 .completed {
   background-color: rgba(204, 106, 97, 0.8);
 }
 
-/* line 474, ../sass/screen.scss */
+/* line 472, ../sass/screen.scss */
 .current {
   background-color: rgba(89, 127, 73, 0.8);
 }
 
-/* line 478, ../sass/screen.scss */
+/* line 476, ../sass/screen.scss */
 .incomplete {
   color: grey;
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-/* line 485, ../sass/screen.scss */
+/* line 483, ../sass/screen.scss */
 #well-done-image {
   background: white;
   display: none;
 }
-/* line 491, ../sass/screen.scss */
+/* line 489, ../sass/screen.scss */
 #well-done-image img {
   max-width: 100%;
   max-height: 100%;
 }
 
-/* line 498, ../sass/screen.scss */
+/* line 496, ../sass/screen.scss */
 .block {
   display: block;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 504, ../sass/screen.scss */
+  /* line 502, ../sass/screen.scss */
   #timer-display {
     font-size: 6em;
   }
 }
 @media screen and (min-width: 360px) {
-  /* line 511, ../sass/screen.scss */
+  /* line 509, ../sass/screen.scss */
   #timer-display {
     font-size: 7em;
   }
 }
 @media screen and (min-width: 480px) {
-  /* line 518, ../sass/screen.scss */
+  /* line 516, ../sass/screen.scss */
   header {
     font-size: 2.5em;
   }
 
-  /* line 521, ../sass/screen.scss */
+  /* line 519, ../sass/screen.scss */
   #speech-speaker-header {
     font-size: 2em;
   }
 
-  /* line 524, ../sass/screen.scss */
+  /* line 522, ../sass/screen.scss */
   #timer-display {
     font-size: 10em;
   }
 }
 @media screen and (min-width: 620px) {
-  /* line 531, ../sass/screen.scss */
+  /* line 529, ../sass/screen.scss */
   #speech-speaker-header {
     font-size: 2.5em;
   }
 
-  /* line 535, ../sass/screen.scss */
+  /* line 533, ../sass/screen.scss */
   #timer-display {
     font-size: 12em;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 542, ../sass/screen.scss */
+  /* line 540, ../sass/screen.scss */
   #timer-display {
     font-size: 15em;
   }
 
-  /* line 546, ../sass/screen.scss */
+  /* line 544, ../sass/screen.scss */
   header {
     font-size: 3em;
   }
 
-  /* line 549, ../sass/screen.scss */
+  /* line 547, ../sass/screen.scss */
   #speech-speaker-header {
     font-size: 3em;
   }
 
-  /* line 553, ../sass/screen.scss */
+  /* line 551, ../sass/screen.scss */
   #start-stop-button {
     font-size: 3rem;
   }
 }
 @media screen and (min-width: 980px) {
-  /* line 559, ../sass/screen.scss */
+  /* line 557, ../sass/screen.scss */
   #timer-display {
     font-size: 20em;
   }
 
-  /* line 563, ../sass/screen.scss */
+  /* line 561, ../sass/screen.scss */
   header {
     font-size: 4em;
   }
 
-  /* line 566, ../sass/screen.scss */
+  /* line 564, ../sass/screen.scss */
   #speech-speaker-header {
     font-size: 3em;
   }
 
-  /* line 569, ../sass/screen.scss */
+  /* line 567, ../sass/screen.scss */
   #start-stop-button {
     font-size: 4rem;
   }

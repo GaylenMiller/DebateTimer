@@ -219,6 +219,7 @@ input {
 	width: 85%;
 }
 
+
 .div-with-header {
 	border: 1px solid;
 	padding: 18px 5px 5px 5px;
@@ -243,21 +244,21 @@ input {
 }
 
 
+#button-prev-next-container {
+	font-family: Bitter, Serif;
+	width: 100%;
+	padding-top: 10px;
+
+}
+
 
 
 // Classes to allow the input fields to be hidden/shown based on the style.
 .style-tp {
 }
+
 .style-ld {
 	display: none;
-}
-
-#button-prev-next-container {
-	font-family: Bitter, Serif;
-	width: 100%;
-	padding-top: 10px;
-	// margin-left: 5%;
-	//margin-top: 10px;
 }
 
 .sand-hover:hover {
@@ -280,11 +281,8 @@ input {
 
 
 #button-next{
-	width: 70%;
-	height: 100%;
-	float: left;
-	margin-left: 2%;
-
+	width: 79%;
+	float: right;
 	&::after {
 		content: image_url('glyphicons/png/glyphicons_223_chevron-right.png');
 		padding-left: .3em;
@@ -294,9 +292,9 @@ input {
 }
 
 #button-prev {
-	width: 15%;
-	height: 100%;
+	width: 14%;
 	float: left;
+	padding-top: 17px;
 
 	&::before {
 		content: image_url('glyphicons/png/glyphicons_224_chevron-left.png');

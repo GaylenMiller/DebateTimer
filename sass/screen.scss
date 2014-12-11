@@ -21,8 +21,8 @@ $trans-white: rgba(255,255,255,0.8);
 $trans-sand: rgba(176,168,131,0.7);
 $trans-grey: rgba(216,216,216,0.8);
 // $trans-green: rgba(97,127,102,0.5);
-$trans-green: rgba(89, 127, 73,0.5);
-$trans-red: rgba(204,106,97,0.5);
+$trans-green: rgba(89, 127, 73,0.8);
+$trans-red: rgba(204,106,97,0.8);
 
 // Settings
 
@@ -106,13 +106,25 @@ header {
 
 footer {
 	background-color: $trans-grey;
-	//border-radius: 5px;
 	text-align: center;
+	.footer-right {
+		float: right;
+		position: relative;
+		top: 25%;
+		right: 1%;
+	}
+	.footer-left {
+		float: left;
+		position: relative;
+		top: 30%;
+		left: 1%;
+	}
 
 	img {
-		height: 88%;
 		position: relative;
+		height: 88%;
 		top: 8%;
+	
 	}
 }
 
@@ -209,9 +221,9 @@ input {
 
 .div-with-header {
 	border: 1px solid;
-	padding: 5% 2% 2% 2%;
-	margin-top: 4%;
-	margin-bottom: 2%;
+	padding: 18px 5px 5px 5px;
+	margin-top: 15px;
+	//margin-bottom: 10px;
 	border-radius: $standard-radius;
 	background-color: $trans-white;
 	position: relative;
@@ -243,8 +255,9 @@ input {
 #button-prev-next-container {
 	font-family: Bitter, Serif;
 	width: 100%;
+	padding-top: 10px;
 	// margin-left: 5%;
-	margin-top: 2%;
+	//margin-top: 10px;
 }
 
 .sand-hover:hover {
@@ -351,8 +364,9 @@ input {
 	font-family: Bitter, Serif;
 	font-size: 2.5rem;
 	text-align: center;
-	padding: 2%;
-	margin-bottom: 2%;
+	padding: 8px;
+	margin-top: 5px;
+	//margin-bottom: 2%;
 	border-radius: $standard-radius;
 }
 
@@ -379,6 +393,7 @@ input {
 	border-radius: $standard-radius;
 	display: inline-block;
 	padding: 2% 0%;
+	margin-top: 5px;
 }
 
 #up-arrow {

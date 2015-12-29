@@ -268,7 +268,7 @@ input {
 .button-prev-next {
 	font-family: Bitter, Serif;
 	font-size: 1.7em;
-	padding: .3em;
+	// padding: .3em;
 
 	// height: 2em;
 	text-align: center;
@@ -280,8 +280,22 @@ input {
 }
 
 
+#button-prev {
+	width: 14%;
+	float: left;
+	padding: 10px 5px 5px 5px;
+	min-height: 27px;
+
+	&::before {
+		content: image_url('glyphicons/png/glyphicons_224_chevron-left.png');
+		padding-left: .3em;
+		padding-right: .3em;
+	}
+}
+
 #button-next{
 	width: 79%;
+	// min-height: 30px;
 	float: right;
 	&::after {
 		content: image_url('glyphicons/png/glyphicons_223_chevron-right.png');
@@ -291,30 +305,6 @@ input {
 
 }
 
-#button-prev {
-	width: 14%;
-	float: left;
-	padding-top: 17px;
-
-	&::before {
-		content: image_url('glyphicons/png/glyphicons_224_chevron-left.png');
-		padding-left: .3em;
-		padding-right: .3em;
-	}
-}
-
-#button-skip {
-	font-family: Bitter, Serif;
-	font-size: 1em;
-	text-align: center;
-	background-color: $trans-sand;
-	border-radius: 10px;
-	padding: .15em;
-	width: 90%;
-	cursor: pointer;
-	margin-left: 5%;
-	margin-top: .5em;
-}
 
 
 // Timer --------------------------------------------------------------------

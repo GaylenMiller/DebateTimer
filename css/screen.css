@@ -319,7 +319,6 @@ input {
 .button-prev-next {
   font-family: Bitter, Serif;
   font-size: 1.7em;
-  padding: .3em;
   text-align: center;
   background-color: rgba(176, 168, 131, 0.7);
   border-radius: 10px;
@@ -328,62 +327,49 @@ input {
 }
 
 /* line 283, ../sass/screen.scss */
-#button-next {
-  width: 79%;
-  float: right;
-}
-/* line 286, ../sass/screen.scss */
-#button-next::after {
-  content: url('../img/glyphicons/png/glyphicons_223_chevron-right.png?1372836252');
-  padding-left: .3em;
-  padding-right: .3em;
-}
-
-/* line 294, ../sass/screen.scss */
 #button-prev {
   width: 14%;
   float: left;
-  padding-top: 17px;
+  padding: 10px 5px 5px 5px;
+  min-height: 27px;
 }
-/* line 299, ../sass/screen.scss */
+/* line 289, ../sass/screen.scss */
 #button-prev::before {
   content: url('../img/glyphicons/png/glyphicons_224_chevron-left.png?1372836374');
   padding-left: .3em;
   padding-right: .3em;
 }
 
-/* line 306, ../sass/screen.scss */
-#button-skip {
-  font-family: Bitter, Serif;
-  font-size: 1em;
-  text-align: center;
-  background-color: rgba(176, 168, 131, 0.7);
-  border-radius: 10px;
-  padding: .15em;
-  width: 90%;
-  cursor: pointer;
-  margin-left: 5%;
-  margin-top: .5em;
+/* line 296, ../sass/screen.scss */
+#button-next {
+  width: 79%;
+  float: right;
+}
+/* line 300, ../sass/screen.scss */
+#button-next::after {
+  content: url('../img/glyphicons/png/glyphicons_223_chevron-right.png?1372836252');
+  padding-left: .3em;
+  padding-right: .3em;
 }
 
-/* line 325, ../sass/screen.scss */
+/* line 315, ../sass/screen.scss */
 #speech-speaker-header {
   font-size: 1.2em;
   font-weight: bold;
 }
-/* line 328, ../sass/screen.scss */
+/* line 318, ../sass/screen.scss */
 #speech-speaker-header #speech-heading {
   display: inline-block;
   min-width: 30%;
   text-align: center;
 }
-/* line 333, ../sass/screen.scss */
+/* line 323, ../sass/screen.scss */
 #speech-speaker-header #speaker-heading {
   display: inline-block;
   width: 63%;
 }
 
-/* line 343, ../sass/screen.scss */
+/* line 333, ../sass/screen.scss */
 #sand-column {
   border: solid 1px;
   width: 20%;
@@ -393,7 +379,7 @@ input {
   border-radius: 10px;
 }
 
-/* line 353, ../sass/screen.scss */
+/* line 343, ../sass/screen.scss */
 #timer-display {
   width: 100%;
   font-size: 5em;
@@ -401,7 +387,7 @@ input {
   text-align: right;
 }
 
-/* line 361, ../sass/screen.scss */
+/* line 351, ../sass/screen.scss */
 #start-stop-button {
   font-family: Bitter, Serif;
   font-size: 2.5rem;
@@ -411,11 +397,11 @@ input {
   border-radius: 10px;
 }
 
-/* line 371, ../sass/screen.scss */
+/* line 361, ../sass/screen.scss */
 .start {
   background-color: rgba(89, 127, 73, 0.8);
 }
-/* line 373, ../sass/screen.scss */
+/* line 363, ../sass/screen.scss */
 .start:hover {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzU5N2Y0OSIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
@@ -425,11 +411,11 @@ input {
   cursor: pointer;
 }
 
-/* line 378, ../sass/screen.scss */
+/* line 368, ../sass/screen.scss */
 .stop {
   background-color: rgba(204, 106, 97, 0.8);
 }
-/* line 380, ../sass/screen.scss */
+/* line 370, ../sass/screen.scss */
 .stop:hover {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2NjNmE2MSIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
@@ -439,7 +425,7 @@ input {
   cursor: pointer;
 }
 
-/* line 387, ../sass/screen.scss */
+/* line 377, ../sass/screen.scss */
 .control-buttons {
   font-family: Bitter, Serif;
   font-size: 1.6rem;
@@ -450,71 +436,71 @@ input {
   margin-top: 5px;
 }
 
-/* line 397, ../sass/screen.scss */
+/* line 387, ../sass/screen.scss */
 #up-arrow {
   width: 30%;
   display: none;
 }
 
-/* line 403, ../sass/screen.scss */
+/* line 393, ../sass/screen.scss */
 #down-arrow {
   width: 30%;
 }
 
-/* line 408, ../sass/screen.scss */
+/* line 398, ../sass/screen.scss */
 #next-speech-button {
   width: 68%;
 }
 
-/* line 413, ../sass/screen.scss */
+/* line 403, ../sass/screen.scss */
 #prev-speech-button {
   width: 100%;
   margin-bottom: 2%;
 }
 
-/* line 420, ../sass/screen.scss */
+/* line 410, ../sass/screen.scss */
 #well-done-image a {
   padding-left: 2%;
   padding-right: 2%;
   margin-top: 2%;
 }
 
-/* line 427, ../sass/screen.scss */
+/* line 417, ../sass/screen.scss */
 table {
   border: solid 1px;
   width: 100%;
   border-radius: 10px;
 }
-/* line 432, ../sass/screen.scss */
+/* line 422, ../sass/screen.scss */
 table td, table th {
   text-align: center;
   border-right: solid 1px;
 }
-/* line 436, ../sass/screen.scss */
+/* line 426, ../sass/screen.scss */
 table th {
   background-color: grey;
   font-weight: bold;
 }
-/* line 440, ../sass/screen.scss */
+/* line 430, ../sass/screen.scss */
 table tr {
   border-bottom: solid 1px;
 }
 
-/* line 445, ../sass/screen.scss */
+/* line 435, ../sass/screen.scss */
 #speech-speaker-table {
   display: none;
 }
 
-/* line 449, ../sass/screen.scss */
+/* line 439, ../sass/screen.scss */
 .iconfont {
   font-family: "web_symbolsregular";
 }
 
-/* line 453, ../sass/screen.scss */
+/* line 443, ../sass/screen.scss */
 .active {
   background-color: rgba(176, 168, 131, 0.7);
 }
-/* line 455, ../sass/screen.scss */
+/* line 445, ../sass/screen.scss */
 .active:hover {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2IwYTg4MyIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
@@ -524,120 +510,120 @@ table tr {
   cursor: pointer;
 }
 
-/* line 460, ../sass/screen.scss */
+/* line 450, ../sass/screen.scss */
 .inactive {
   background-color: rgba(216, 216, 216, 0.8);
 }
 
-/* line 468, ../sass/screen.scss */
+/* line 458, ../sass/screen.scss */
 .completed {
   background-color: rgba(204, 106, 97, 0.8);
 }
 
-/* line 472, ../sass/screen.scss */
+/* line 462, ../sass/screen.scss */
 .current {
   background-color: rgba(89, 127, 73, 0.8);
 }
 
-/* line 476, ../sass/screen.scss */
+/* line 466, ../sass/screen.scss */
 .incomplete {
   color: grey;
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-/* line 483, ../sass/screen.scss */
+/* line 473, ../sass/screen.scss */
 #well-done-image {
   background: white;
   display: none;
 }
-/* line 489, ../sass/screen.scss */
+/* line 479, ../sass/screen.scss */
 #well-done-image img {
   max-width: 100%;
   max-height: 100%;
 }
 
-/* line 496, ../sass/screen.scss */
+/* line 486, ../sass/screen.scss */
 .block {
   display: block;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 502, ../sass/screen.scss */
+  /* line 492, ../sass/screen.scss */
   #timer-display {
     font-size: 6em;
   }
 }
 @media screen and (min-width: 360px) {
-  /* line 509, ../sass/screen.scss */
+  /* line 499, ../sass/screen.scss */
   #timer-display {
     font-size: 7em;
   }
 }
 @media screen and (min-width: 480px) {
-  /* line 516, ../sass/screen.scss */
+  /* line 506, ../sass/screen.scss */
   header {
     font-size: 2.5em;
   }
 
-  /* line 519, ../sass/screen.scss */
+  /* line 509, ../sass/screen.scss */
   #speech-speaker-header {
     font-size: 2em;
   }
 
-  /* line 522, ../sass/screen.scss */
+  /* line 512, ../sass/screen.scss */
   #timer-display {
     font-size: 10em;
   }
 }
 @media screen and (min-width: 620px) {
-  /* line 529, ../sass/screen.scss */
+  /* line 519, ../sass/screen.scss */
   #speech-speaker-header {
     font-size: 2.5em;
   }
 
-  /* line 533, ../sass/screen.scss */
+  /* line 523, ../sass/screen.scss */
   #timer-display {
     font-size: 12em;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 540, ../sass/screen.scss */
+  /* line 530, ../sass/screen.scss */
   #timer-display {
     font-size: 15em;
   }
 
-  /* line 544, ../sass/screen.scss */
+  /* line 534, ../sass/screen.scss */
   header {
     font-size: 3em;
   }
 
-  /* line 547, ../sass/screen.scss */
+  /* line 537, ../sass/screen.scss */
   #speech-speaker-header {
     font-size: 3em;
   }
 
-  /* line 551, ../sass/screen.scss */
+  /* line 541, ../sass/screen.scss */
   #start-stop-button {
     font-size: 3rem;
   }
 }
 @media screen and (min-width: 980px) {
-  /* line 557, ../sass/screen.scss */
+  /* line 547, ../sass/screen.scss */
   #timer-display {
     font-size: 20em;
   }
 
-  /* line 561, ../sass/screen.scss */
+  /* line 551, ../sass/screen.scss */
   header {
     font-size: 4em;
   }
 
-  /* line 564, ../sass/screen.scss */
+  /* line 554, ../sass/screen.scss */
   #speech-speaker-header {
     font-size: 3em;
   }
 
-  /* line 567, ../sass/screen.scss */
+  /* line 557, ../sass/screen.scss */
   #start-stop-button {
     font-size: 4rem;
   }
